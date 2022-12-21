@@ -61,10 +61,30 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum. Eius numq
 
 -   👁️ Ojo 👁️
 
-dentro del función cloneNode hay que agregar true para que clone a los hijos, si no se le agrega solo copiaral nodo padre en este caso arcticle
+> Dentro del función cloneNode hay que agregar true para que clone a los hijos, si no se le agrega solo copiaral nodo padre en este caso arcticle
 
 -   ✨ejemplo de salida cuando no se agrega true✨
 
 ```ssh
-<articlle class="border-grey"> </article>
+<article class="border-grey"> </article>
+```
+
+### Formas de insertar elemntos dentro del dom
+
+```sh
+const articulo2 = articulo.cloneNode(true);
+
+const section = document.getElementById('section');
+
+section.appendChild(articulo2);
+//section.insertAdjacentElement('afterbegin', articulo2);
+//section.insertAdjacentElement('afterend', articulo2);
+//section.insertAdjacentElement('beforebegin', articulo2);
+section.insertAdjacentElement('beforeend', articulo2)
+```
+
+### Remover elementos el dom
+
+```sh
+section.remove()
 ```
