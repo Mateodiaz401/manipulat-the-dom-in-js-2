@@ -60,7 +60,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum. Eius numq
 ```
 
 -   👁️ Ojo 👁️
-    dentro del función cloneNode hay que agregar true para que clone a los hijos, si no se le agrega solo copiaral nodo padre en este caso arcticle
+
+dentro del función cloneNode hay que agregar true para que clone a los hijos, si no se le agrega solo copiaral nodo padre en este caso arcticle
 
 -   ✨ejemplo de salida cuando no se agrega true✨
 
